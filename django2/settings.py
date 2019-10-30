@@ -81,41 +81,6 @@ WSGI_APPLICATION = 'django2.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
-"""
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'django2_db',
-        'USER': 'root',
-        'PASSWORD': 'val!!valadmin!!if',
-        'HOST': '10.130.100.61',
-        'PORT': '3306',
-        'OPTIONS': {
-            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
-        },
-    }
-}
-
-
-DATABASES = {
-    'default': {
-        # MySQL database engine class.
-        'ENGINE': 'django.db.backends.mysql',
-        # MySQL database host ip.
-        'HOST': '10.130.100.61',
-        # port number.
-        'PORT': '',
-        # database name.
-        'NAME': 'django2_db',
-        # user name.
-        'USER': 'root',
-        # password
-        'PASSWORD': 'val!!valadmin!!if',
-        # connect options
-        'OPTIONS': {'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",},
-    }
-}
-"""
 
 DATABASES = {
     'default': {
@@ -173,12 +138,9 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 #configurações de e-mail
 #EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-"""
-EMAIL_HOST = 'localhost'
-EMAIL_HOST_USER = 'no-replay@seudominio.com.br'
-EMAIL_PORT = 587
-EMAIL_USER_TLS = True
-EMAIL_HOST_PASSWORD = 'sua-senha'
-"""
 
-
+#EMAIL_HOST = 'localhost'
+#EMAIL_HOST_USER = 'no-replay@seudominio.com.br'
+#EMAIL_PORT = 587
+#EMAIL_USER_TLS = True
+#EMAIL_HOST_PASSWORD = 'sua-senha'
