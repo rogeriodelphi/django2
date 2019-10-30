@@ -30,7 +30,7 @@ SECRET_KEY = '0w!c^i6omp4d9^7_1su^g9+a14=n#x6-ezoq_&xg0vdivtpw2x'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['django2-rbm.herokuapp.com', 'localhost', '10.130.100.4', '127.0.0.1']
+ALLOWED_HOSTS = ['django2-rbm.herokuapp.com', 'localhost']
 
 # Application definition
 
@@ -48,7 +48,6 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -90,7 +89,7 @@ DATABASES = {
         'USER': 'postgres',
         'PASSWORD': '123456',
         'HOST': '127.0.0.1',
-        'PORT': '5432', # 8000 is default
+        'PORT': '', # 8000 is default
     }
 }
 
