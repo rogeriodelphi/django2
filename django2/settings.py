@@ -26,7 +26,8 @@ SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=False, cast=bool)
-ALLOWED_HOSTS = ['django2-rbm.herokuapp.com', '127.0.0.1']
+
+ALLOWED_HOSTS = ['django2-rbm.herokuapp.com', 'localhost']
 
 # Application definition
 
@@ -79,8 +80,9 @@ WSGI_APPLICATION = 'django2.wsgi.application'
 #Usando postgresSQL com Heroku
 default_dburl = 'sqlite:///' + os.path.join(BASE_DIR, 'db.sqlite3')
 
-DATABASES = { 'default': config('DATABASE_URL', default=default_dburl, cast=dburl), }
-
+DATABASES = {
+    'default': config('DATABASE_URL', default=default_dburl, cast=dburl),
+}
 
 #DATABASES = {
 #    'default': {
