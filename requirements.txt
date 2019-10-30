@@ -13,6 +13,7 @@ progressbar2==3.43.1
 psycopg2==2.8.4
 psycopg2-binary==2.8.3
 PyMySQL==0.9.3
+python-decouple==3.1
 python-utils==2.3.0
 pytz==2019.2
 six==1.12.0
