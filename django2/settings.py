@@ -88,8 +88,8 @@ DATABASES = {
         # 'NAME': os.path.join(BASE_DIR, 'mydb'),
         'USER': 'postgres',
         'PASSWORD': '123456',
-        'HOST': '127.0.0.1',
-        'PORT': '', # 8000 is default
+        'HOST': 'localhost',
+        'PORT': '5432', # 8000 is default
     }
 }
 
