@@ -30,7 +30,7 @@ SECRET_KEY = '0w!c^i6omp4d9^7_1su^g9+a14=n#x6-ezoq_&xg0vdivtpw2x'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['django2-rbm.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['django2-rbm.herokuapp.com', 'localhost', '127.0.0.1']
 
 # Application definition
 
@@ -92,7 +92,6 @@ DATABASES = {
         'PORT': '', # 8000 is default
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
